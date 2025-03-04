@@ -1,0 +1,34 @@
+{
+    "NAME": "MyRandomCPU",
+    "ROCKET_CORES": [
+        {
+            "NUMBER": 1,
+            "L1I_CACHE": {
+                "SETS": 64,
+                "WAYS": 4
+            },
+            "L1D_CACHE": {
+                "SETS": 64,
+                "WAYS": 8
+            },
+            "USE_TLB": true
+        }, {
+            "NUMBER": 1,
+            "L1I_CACHE": {
+                "SETS": 64,
+                "WAYS": 2
+            },
+            "L1D_CACHE": {
+                "SETS": 64,
+                "WAYS": 8
+            },
+            "USE_TLB": true
+        }
+    ],
+    
+    "L2_CACHE": {
+        "WAYS": 4,
+        "CAPACITY_KB": 128,
+        "SUB_BANKING_FACTOR": 4
+    }
+}
